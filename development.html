@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI guidance tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <div class="container">
+      <div class="row my-2">
+        <div class="col-md-8 offset-md-2">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <span class="badge rounded-pill text-bg-primary">1</span><span class="ms-1 lead">Design</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                      <span class="fs-5">Seek clinical inputs relevant to the intended use of the AI-MD in the development of their AI-MD. <b>[4.2.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails1" aria-expanded="false" aria-controls="moreDetails1">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails1">
+                        <div class="card card-body border-primary my-2">
+                          Clinical inputs to consider include:
+                          <ol type="a">
+                            <li>The clinical problem statement</li>
+                            <li>The representativeness of training and testing datasets which, beyond fair/unbiased outcomes, can have an impact on patient safety</li>
+                            <li>Algorithm testing approach such as (i) appropriate testing scenarios and validation methodology, (ii) testing input quality, (iii) testing at the “boundary conditions" between valid/invalid input </li>
+                            <li>Identifying causal relationships between inputs and outputs of the AIMD, i.e. a precursor to explainability</li>
+                            <li>Developing the user manual(s), i.e. bringing a clinical lens to sharing how the AI-MD should be implemented safely and taking into consideration the understanding of existing clinical workflows</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2">
+                      <span class="fs-5">Seek end-user inputs (e.g. from medical practitioners, patients) as part of a holistic AI-MD design and development process. <b>[4.3.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails2" aria-expanded="false" aria-controls="moreDetails2">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails2">
+                        <div class="card card-body border-primary my-2">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Type of End User</th>
+                                <th scope="col">Aspect</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Medical Practitioner, in addition to clinical inputs obtained<br><br>(e.g. doctors who will be using the AI-MD in the future)</td>
+                                <td>
+                                  <ol type="i">
+                                    <li>Clinical opinions on the safety and efficacy of the AI-MD.
+                                      <ol type="a"><li>What is required to build trust and confidence in adopting the AI-MD as opposed to current clinical methods.</li></ol>
+                                    </li>
+                                    <li>Integration of AI-MD into the clinical workflow.</li>
+                                    <li>Usability (e.g. UX, UI) of the AI-MD, including phrasings of notifications for (i) changes/errors pertaining to input parameters and (ii) clarity of the user manual in guiding medical practitioner in output interpretation.</li>
+                                  </ol>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Patient <br><br>(i.e. those who will be interacting directly with the AI-MD)</td>
+                                <td>
+                                  <ol type="i">
+                                    <li>What is required to build trust and confidence in the care rendered through AI-MD (e.g. quality of care expected vis-à-vis care from physical doctors). </li>
+                                    <li>Usability (e.g. UX, UI) of the AI-MD.</li>
+                                    <li>Clarity of the wording of notifications in the user manual to advise patients on whether they should/should not use the AI-MD for their symptoms/conditions.</li>
+                                  </ol>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault3">
+                    <label class="form-check-label" for="flexCheckDefault3">
+                      <span class="fs-5">Determine the current clinical practice baseline to ensure that the AI-MD’s performance is minimally no worse off than current practice in how it may impact patient safety/welfare. <b>[4.4.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails3" aria-expanded="false" aria-controls="moreDetails3">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails3">
+                        <div class="card card-body border-primary my-2">
+                          This includes establishing appropriate performance indicators, tracking and measuring existing clinical performance in terms of accuracy and specificity. In cases where there is no established medical knowledge and processes, the AIMD can be compared with the status quo (i.e. no intervention).
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault4">
+                    <label class="form-check-label" for="flexCheckDefault4">
+                      <span class="fs-5">Ensure that the datasets used in the development stage are representative to reduce unintended bias. <b>[4.5.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails4" aria-expanded="false" aria-controls="moreDetails4">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails4">
+                        <div class="card card-body border-primary my-2">
+                          This is critical as ML/DL models are entirely dependent upon the integrity of training datasets.
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault5">
+                    <label class="form-check-label" for="flexCheckDefault5">
+                      <span class="fs-5">Document all biases and/or limitations identified in an AI-MD (whether in, for example, the underlying dataset or algorithm) and rectify them if possible. <b>[4.5.4]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails5" aria-expanded="false" aria-controls="moreDetails5">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails5">
+                        <div class="card card-body border-primary my-2">
+                          If not possible (or when investigations into the biases or limitations are still ongoing), developers should document these as limitations to the intended use of the AI-MD and reflect these in the user manual.
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault6">
+                    <label class="form-check-label" for="flexCheckDefault6">
+                      <span class="fs-5">Ensure that the AI-MD can prevent, detect, respond and where possible recover from foreseeable cybersecurity risks. <b>[4.6.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails6" aria-expanded="false" aria-controls="moreDetails6">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails6">
+                        <div class="card card-body border-primary my-2">
+                          <span>Further guidance on cybersecurity approaches can be found in <a href="https://www.hsa.gov.sg/docs/default-source/announcements/regulatory-updates/regulatory-guidelines-for-software-medical-devices--a-lifecycle-approach.pdf">HSA's</a> and <a href="https://www.imdrf.org/sites/default/files/2021-09/imdrf-cons-ppmdc.pdf">International Medical Device Regulators Forum (IMDRF)’s</a> guidelines.</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault7">
+                    <label class="form-check-label" for="flexCheckDefault7">
+                      <span class="fs-5">Demonstrate effectiveness of the AI-MD and endeavour to ensure a sufficient level of explainability based on their intended end-user requirements. <b>[4.7.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails7" aria-expanded="false" aria-controls="moreDetails7">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails7">
+                        <div class="card card-body border-primary my-2">
+                          <ol type="a">
+                            <li><b>For Medical Practitioners:</b> Clarity in recommendations, algorithmic decisions of the AI-MD, and concurrence that these are in-line with their current clinical practices; and</li>
+                            <li><b>For Patients:</b> Trust that the care rendered via the AI-MD is safe and that they will be “no worse off”.</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <span class="badge rounded-pill text-bg-primary">2</span><span class="ms-1 lead">Build</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault8">
+                    <label class="form-check-label" for="flexCheckDefault8">
+                      <span class="fs-5">Adhere to HSA’s regulatory guidelines for software medical devices. <b>[4.8.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails8" aria-expanded="false" aria-controls="moreDetails8">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails8">
+                        <div class="card card-body border-primary my-2">
+                          <span><a href="https://www.hsa.gov.sg/docs/default-source/announcements/regulatory-updates/regulatory-guidelines-for-software-medical-devices--a-lifecycle-approach.pdf">HSA’s regulatory guidelines for software medical devices</a>, highlights the key components of maintaining proper development standards in AI-MD.</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault9">
+                    <label class="form-check-label" for="flexCheckDefault9">
+                      <span class="fs-5">Adopt appropriate development standards (e.g  ISO 14971, ISO 13485, IEC 62304). <b>[4.8.2]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails9" aria-expanded="false" aria-controls="moreDetails9">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails9">
+                        <div class="card card-body border-primary my-2">
+                          <ol type="a">
+                            <li>Risk Management Approach – ISO 14971</li>
+                            <li>Quality Management System – ISO 13485</li>
+                            <li>Software Development – IEC 62304</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault10">
+                    <label class="form-check-label" for="flexCheckDefault10">
+                      <span class="fs-5">Ensure all changes to their AI-MD are properly documented and all software versions are reproducible. <b>[4.8.3]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails10" aria-expanded="false" aria-controls="moreDetails10">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails10">
+                        <div class="card card-body border-primary my-2">
+                          One way is to assign different version numbers to the AI-MD under development (“versioning”). This ensures that the development process remains structured, transparent and that outputs are reproducible.
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <span class="badge rounded-pill text-bg-primary">3</span><span class="ms-1 lead">Test</span>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault11">
+                    <label class="form-check-label" for="flexCheckDefault11">
+                      <span class="fs-5">Evaluate and validate their AI-MD’s performance to ensure it minimally meets the clinical practice baseline. <b>[4.10.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails11" aria-expanded="false" aria-controls="moreDetails11">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails11">
+                        <div class="card card-body border-primary my-2">
+                          The clinical performance of an AI-MD involves more than just technical measures of its algorithm’s performance (e.g. Area under the Curve (AUC) – Receiving Operating Characteristic Curve (ROC) or Precision-Recall Curve (PRC), True Positive Rate, Positive/Negative Predictive Value, Cohen’s Kappa Score, etc.). Developers should work with implementers to ensure that the actual clinical outcomes of the AI-MD (i.e. impact on patients when the AI-MD is introduced to their care) are measured and assessed.
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault12">
+                    <label class="form-check-label" for="flexCheckDefault12">
+                      <span class="fs-5">Document the intended use of their AI-MD and provide updates to implementers. <b>[4.11.1]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails12" aria-expanded="false" aria-controls="moreDetails12">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails12">
+                        <div class="card card-body border-primary my-2">
+                          Documentation should address the following information:
+                          <ol type="a">
+                            <li>Specific clinical use-cases which the AI-MD is designed for;</li>
+                            <li>Benefits and limitations of the AI-MD;</li>
+                            <li>Alternative options to using the AI-MD;</li>
+                            <li>Required inputs for the AI-MD’s algorithmic decisions;</li>
+                            <li>Intended outputs of the AI-MD; and</li>
+                            <li>Boundaries of the inputs and outputs.</li>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check my-2">
+                    <input class="form-check-input fs-5" type="checkbox" value="" id="flexCheckDefault13">
+                    <label class="form-check-label" for="flexCheckDefault13">
+                      <span class="fs-5">Define and document how the AI-MD should be incorporated into clinical workflows. <b>[4.11.2]</b></span>
+                      <a class="icon-link fs-5" href="#" data-bs-toggle="collapse" data-bs-target="#moreDetails13" aria-expanded="false" aria-controls="moreDetails13">
+                        <i class="bi bi-clipboard-plus"></i>
+                      </a>
+                      <div class="collapse" id="moreDetails13">
+                        <div class="card card-body border-primary my-2">
+                          A well-defined clinical workflow should include the following information:
+                          <ol type="a">
+                            <li>At what stage of the clinical workflow the AI-MD is intended to be used;</li>
+                            <li>How implementers should respond to the variety of AI-MD’s outputs (i.e. within, or beyond expected output range);</li>
+                            <li>The recommended degree and point(s) of human oversight for the AIMD; and</li>
+                            <li>How data flows to and from the AI-MD. </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
