@@ -20,7 +20,7 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="implementation.html">Implementation Tool</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.moh.gov.sg/licensing-and-regulation/artificial-intelligence-in-healthcare">
+                <a class="nav-link" target="_blank" href="https://www.moh.gov.sg/licensing-and-regulation/artificial-intelligence-in-healthcare">
                   AIHGle guidelines
                 </a>
               </li>
