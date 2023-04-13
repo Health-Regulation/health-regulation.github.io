@@ -14,10 +14,10 @@ class Header extends HTMLElement {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="development.html">Development Tool</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="development.html">Development Tool</a>
+                <a class="nav-link" href="implementation.html">Implementation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://www.moh.gov.sg/licensing-and-regulation/artificial-intelligence-in-healthcare">
